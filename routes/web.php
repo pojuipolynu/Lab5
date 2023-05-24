@@ -22,9 +22,3 @@ Route::get('/recipecomment', [RecipesController::class, 'comments']);
 Route::get('/dishes', [RecipesController::class, 'show']);
 Route::post('/dishes/submit', [RecipesController::class, 'submit']);
 
-
-
-Route::post('/db/submit', [Commentarys::class, 'store']);
-Route::get('/db', [Commentarys::class, 'index']);
-Route::get('/sort', [Commentarys::class, 'search']);
-Route::post('/sort/submit', [Commentarys::class, 'search_res']);
